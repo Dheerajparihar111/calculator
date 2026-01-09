@@ -1,0 +1,51 @@
+import java.util.Scanner;
+public class Main{
+
+
+    static void main(String[] args){
+        System.out.println( "enter the number");
+        Scanner sc = new Scanner(System.in);
+        int  d1 = sc.nextInt();
+        System.out.println("chose the operator");
+        char c1 = '+';
+        char c2 = '-';
+        char c3 = '/';
+        char c4 = '*';
+        char c5 = '%';
+        System.out.println(c1);
+        System.out.println(c2);
+        System.out.println(c3);
+        System.out.println(c4);
+        System.out.println(c5);
+        char ca = sc.next().charAt(0);
+        System.out.println("enter the number");
+        int d2 = sc.nextInt();
+
+        switch (ca){
+            case '+':
+                System.out.println("result"+(d1+d2));
+            break;
+            case '-':
+                System.out.println("result"+(d1-d2));
+            break;
+            case '*':
+                System.out.println("result"+(d1*d2));
+            break;
+            case '/':if(d1==0){
+                System.out.println("invalid");
+            } else if (d2==0) {
+                System.out.println("invalid");
+
+            } else {
+                System.out.println("result" + (d1 / d2));
+            }
+            break;
+            case '%':
+                System.out.println("result"+(d1%d2));
+            break;
+        }
+
+        sc.close();
+
+    }
+}
