@@ -36,17 +36,15 @@ public class Main{
                     System.out.println("Result =" + (number1 * number2));
                     break;
                 case '/':
-                    if (number1 == 0) {
+                    if (number2 == 0) {
                         System.out.println("Invalid!!");
-                    } else if (number2 == 0) {
-                        System.out.println("Invalid!!");
-
-                    } else {
-                        System.out.println("Result" + (number1 / number2));
+                    }
+                    else {
+                        System.out.println("Result =" + (number1 / number2));
                     }
                     break;
                 case '%':
-                    System.out.println("Result" + (number1 % number2));
+                    System.out.println("Result =" + (number1 % number2));
                     break;
                 case 'e':
                     System.out.println("Thank You For Using Calculator");
