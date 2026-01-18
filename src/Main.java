@@ -18,11 +18,15 @@ public class Main{
         home homePage = new home();
         while (true) {
             System.out.println("*************Wel-Come to Calculator************");
-            System.out.println("Enter the Number");
-            int number1 = sc.nextInt();
             homePage.home();
             char operator = sc.next().charAt(0);
-            System.out.println("Enter the Number");
+            if (operator == 'e'){
+                System.out.println("Thank You For Using Calculator");
+                break;
+            }
+            System.out.println("Enter The First Number");
+            int number1 = sc.nextInt();
+            System.out.println("Enter the Second  Number");
             int number2 = sc.nextInt();
 
             switch (operator) {
@@ -46,9 +50,7 @@ public class Main{
                 case '%':
                     System.out.println("Result =" + (number1 % number2));
                     break;
-                case 'e':
-                    System.out.println("Thank You For Using Calculator");
-                    System.exit(0);
+
 
             }
         }
