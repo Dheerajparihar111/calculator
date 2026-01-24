@@ -62,6 +62,7 @@ Clone the repository:
 
 git clone https://github.com/Dheerajparihar111/calculator.git
 
+<img width="1907" height="997" alt="calculator output image" src="https://github.com/user-attachments/assets/7922ac0c-5603-4590-a3c4-d9e8dbb49033" />
 
 Open the project in any Java IDE (Eclipse, IntelliJ IDEA, VS Code, etc.).
 
